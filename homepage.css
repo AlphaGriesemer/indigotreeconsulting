@@ -1,30 +1,30 @@
 
 body{
-  background: #FDF8F5;
-  overflow-x: hidden;
+  background:linear-gradient(to right, #164A41, #9dc88d);
+  overflow: hidden;
 }
 /* HEADER */
 ul {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   top: 0px;
   left: 0;
   list-style-type: none;
   overflow: hidden;
-  background-color: #FDF8F5;
+  color: #ffffff;
   min-width: 100%;
 }
 
 ul p{
-  color: black;
   float: left;
   display: inline;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
-  border-bottom: 2px solid #E8CEBF;
+  border-bottom: 2px solid #f1c47c;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   
 }
 
@@ -35,15 +35,15 @@ li {
 /* DROPDOWN */
 li a, .dropbtn {
   display: inline-block;
-  color: #4f4846;
+  color:#ffffff;
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #266150;
-  color: #e8cebf;
+  color: #f1c47c;
+  border: 1px solid #f1c47c;
 }
 
 .dropdown {
@@ -59,65 +59,86 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown-content a {
-  color: black;
+  color: #ffffff;
   padding: 20px 30px;
   text-decoration: none;
   display: block;
 }
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* ABOUT SECTION */
-.about{
-  padding-bottom: 100px;
-  background-color: #DDAF94;
-  color: #FDF8F5;
-}
-.about_h2{
-  padding-left: 30px;
-  display:inline-block;
-  width: 1080px;
-}
-.image_wrapper{
-  float: right;
-  background-color: #DDAF94;
-  /* background: linear-gradient(#fddb92, #d1fdff); */
-}
-.image_wrapper .pic{
-  padding: 14px;
-}
+
+
+
+
+
+
+
+
+
 /* Slideshow container */
-.mySlide img{
-  max-height: 65vh;
-  width: 100%;
+.text_area{
+  float: right;
+  margin-right: 50vw;
+  border: 2px solid #f1c47c;
+  background: linear-gradient(to right, #9dc88d, #4d774e);
+  border-radius: 400px;
+  width: 70vw;
+  height: 100vh;
+  z-index: -1;
+}
+.carousel-container{
+  float: right;
+  position: absolute;
+  border: 2px solid #f1c47c;
+  margin-left: 40vw;
+  background: linear-gradient(to right, #9dc88d, #4d774e);
+  border-radius: 40px;
+  width: 70vw;
+  height: 100vh;
+  z-index: -2;
 }
 
-/* Next & previous buttons */
+.mySlide img{
+  float: left;
+  position: fixed;
+  margin-top: 5vh;
+  width: 46vw;
+  height: 40vh;
+  border: 2px solid #f1c47c;
+}
+
+
+/* Next & previous buttons*/
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 40%;
+  position: relative;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
-  color: white;
+  top: -43%;
+  color: #f1c47c;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 1;
 }
 
-/* Position the "next button" to the right */
 .next {
-  display: inline-block;
-  right: 0;
+  float: left;
+  margin-top: 20vh;
+  margin-left: 46.2vw;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  float: left;
+  margin-left: 22vw;
+  margin-top: 20vh;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
