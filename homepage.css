@@ -1,0 +1,145 @@
+
+body{
+  background: #FDF8F5;
+  overflow-x: hidden;
+}
+/* HEADER */
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  left: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #FDF8F5;
+  min-width: 100%;
+}
+
+ul p{
+  color: black;
+  float: left;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid #E8CEBF;
+  
+}
+
+li {
+  float: right;
+  padding-left: 4px;
+}
+/* DROPDOWN */
+li a, .dropbtn {
+  display: inline-block;
+  color: #4f4846;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #266150;
+  color: #e8cebf;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* ABOUT SECTION */
+.about{
+  padding-bottom: 100px;
+  background-color: #DDAF94;
+  color: #FDF8F5;
+}
+.about_h2{
+  padding-left: 30px;
+  display:inline-block;
+  width: 1080px;
+}
+.image_wrapper{
+  float: right;
+  background-color: #DDAF94;
+  /* background: linear-gradient(#fddb92, #d1fdff); */
+}
+.image_wrapper .pic{
+  padding: 14px;
+}
+/* Slideshow container */
+.mySlide img{
+  max-height: 65vh;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  display: inline-block;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and(max-width: 300px){
+  .prev, .next, .text{font-size: 11px}
+}

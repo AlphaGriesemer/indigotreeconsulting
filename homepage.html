@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="homepage.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script type="text/javascript" src="homepage.js"></script>
+</head>
+<body>
+<!--Header-->
+<ul>
+  <p>Indigo Tree Consulting</p>
+  <li class="dropdown">
+    <a href="C:\Users\Alex Griesemer\OneDrive\Desktop\Business\IndigoTreeConsulting\services.html">Services \/</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li><a href="C:\Users\Alex Griesemer\OneDrive\Desktop\Business\IndigoTreeConsulting\contact.html">Contact</a></li>
+  <li><a href="C:\Users\Alex Griesemer\OneDrive\Desktop\Business\IndigoTreeConsulting\homepage.html">Home</a></li>
+</ul>
+<!--Carousel-->
+    <div class="mySlide fade">
+      <img src="bewd1.jpg" >   
+    </div>
+    
+    <div class="mySlide fade">
+      <img src="bewd1.jpg" >
+    </div>
+    
+    <div class="mySlide fade">
+      <img src="bewd1.jpg">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlide");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+      }
+      </script>
+  
+
+
+<!--About Section-->
+<div class="about">
+  <div class='about_h2'><h2>INDIGO TREE CONSULTING IS AN INDIANAPOLIS BASED FIRM SPECIALIZING IN TREE RELATED CONSULTING SERVICES.</h2>
+    <b>
+      Indigo Tree Consulting, LLC was founded by Andrew Mertz in 2016. 
+      Andrew is a Registered Consulting Arborist and Board Certified Master Arborist with over 18 years of professional arboricultural and restoration ecology experience.
+      He is also a graduate of the School of Public and Environmental Affairs at Indiana University with a Masters of Public Affairs.
+      Professional experience includes over a decade of public service with the City of Indianapolis as a restoration ecologist and arborist for Indy Parks and Recreation.
+      He served as Urban Forestry Manager for the City of Indianapolis from 2010 to 2012. 
+      Andrew was a consulting arborist for a locally owned tree care company from 2012 to 2016.  
+      As a consulting arborist, he prepared  tree and landscape appraisals, tree risk assessments, municipal tree inventories, 
+      and specifications for tree care services including tree removal, tree pruning, and plant health care.
+    </b>
+  </div>
+  <div class="image_wrapper">
+    <img class="pic" src="masterArborist.jpg">
+    <img class="pic" src="masterArborist.jpg">
+    <img class="pic" src="masterArborist.jpg">
+  </div>
+</div>
+
+</body>
+</html>
+
