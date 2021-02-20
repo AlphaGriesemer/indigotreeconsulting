@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'framework/css/homepage.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="{% static 'framework/js/homepage.js' %}"></script>
+</head>
+<body>
+<!--Header-->
+<ul>
+  <p>Indigo Tree Consulting</p>
+  <li class="dropdown">
+    <a href="{% url 'services' %}" class="services">Services <i class="fa fa-bars"></i></a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li><a href="{% url 'contact' %}">Contact</a></li>
+  <li><a href="{% url 'index' %}">Home</a></li>
+</ul>
+<!--About Section-->
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<div class="mySlide fade">
+  <img src="{% static 'framework/images/fox.jpg' %}">
+</div>
+<div class="mySlide fade">
+  <img src="{% static 'framework/images/fox.jpg' %}" >
+</div>
+<div class="mySlide fade">
+  <img src="{% static 'framework/images/fox.jpg' %}" >
+</div>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!--Carousel-->
+<div class="carousel-container">
+</div> 
+<div class="text_area">
+</div>
+  
+<!--JAVA SCRIPT-->    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlide");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+  
+
+
+
+
+</body>
+</html>
+

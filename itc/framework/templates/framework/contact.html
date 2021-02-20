@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'framework/css/homepage.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script type="text/javascript" src="{% static 'framework/js/homepage.js' %}"></script>
+</head>
+<body>
+<!--Header-->
+<ul>
+  <p>Indigo Tree Consulting</p>
+  <li class="dropdown">
+    <a href="{% url 'services' %}">Services \/</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li><a href="{% url 'contact' %}">Contact</a></li>
+  <li><a href="{% url 'index' %}l">Home</a></li>
+</ul>
