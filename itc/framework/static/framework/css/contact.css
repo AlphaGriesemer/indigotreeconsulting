@@ -24,7 +24,7 @@ ul p{
   font-size: 25px;
   font-weight: bold;
   border-bottom: 2px solid #fffffc;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Lato';
   
 }
 
@@ -39,6 +39,8 @@ li a, .dropbtn {
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
+  font-family: 'Lato';
+
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -84,8 +86,8 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .contactBox{
   border: 2px solid black;
-  width: 50%;
-  text-align: center;
+  width: 100%;
+  height: 50vh;
   float: left;
   margin-top: 0vh;
 }
@@ -93,6 +95,86 @@ li a:hover, .dropdown:hover .dropbtn {
 .formInfo label{
   padding: 16px;
   display: block;
-  width: 30vw;
   border: 2px solid black;
+  margin-left: 20vw;
 }
+
+/* Submit Button */
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+.btn-4 {
+  background: #34495e;
+  color: #fff;
+}
+
+.btn-4:hover {
+  background: #2c3e50;
+}
+
+.btn-4:active {
+  background: #2c3e50;
+  top: 2px;
+}
+
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+

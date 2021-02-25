@@ -4,7 +4,8 @@
 <head>
   <link rel="stylesheet" type="text/css" href="{% static 'framework/css/contact.css' %}">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -15,7 +16,7 @@
 <ul>
   <p>Indigo Tree Consulting</p>
   <li class="dropdown">
-    <a href="{% url 'services' %}">Services \/</a>
+    <a href="{% url 'services' %}" class="services">Services <i class="fa fa-bars"></i></a>
     <div class="dropdown-content">
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
@@ -36,7 +37,7 @@
     <label id="firstName" aria-placeholder="Name">{{ form.first_name }}</label>
     <label id="email" aria-placeholder="Email">{{ form.email }}</label>
     <label id="message" aria-placeholder="message">{{ form.comment }}</label>
-    <input type="submit" value="Send message">
+    <button class="btn btn-4 btn-sep icon-send">Button</button>
 </form>
 </div>
 </body>
