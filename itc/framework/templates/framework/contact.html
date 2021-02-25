@@ -23,15 +23,24 @@
     </div>
   </li>
   <li><a href="{% url 'contact' %}">Contact</a></li>
-<<<<<<< HEAD
-  <li><a href="{% url 'index' %}">Home</a></li>
-</ul>
-=======
   <li><a href="{% url 'index' %}l">Home</a></li>
 </ul>
-<form method="post">{% csrf_token %}
-    {{ form.as_p }}
+
+
+<!--IMAGE HEADER-->
+<div class="banner">
+  <p>Test</p>
+  <img src="{% static 'framework/images/fox.jpg' %}" >
+</div>
+<!--Contact-->
+<div class="contactBox">
+  <form method="post" class="formInfo">
+    {% csrf_token %}
+    <label id="firstName" aria-placeholder="First Name">{{ form.first_name }}</label>
+    <label id="lastName" aria-placeholder="Last Name">{{ form.last_name }}</label>
+    <label id="email" aria-placeholder="Email">{{ form.email }}</label>
+    <label id="message" aria-placeholder="message">{{ form.comment }}</label>
     <input type="submit" value="Send message">
 </form>
+</div>
 </body>
->>>>>>> 44a88fcb75bcd70eb91fc4b8174d9d35bd081b8e
