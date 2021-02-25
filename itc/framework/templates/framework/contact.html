@@ -28,16 +28,12 @@
 
 
 <!--IMAGE HEADER-->
-<div class="banner">
-  <p>Test</p>
-  <img src="{% static 'framework/images/fox.jpg' %}" >
-</div>
+<img  class="banner" src="{% static 'framework/images/fox.jpg' %}" >
 <!--Contact-->
 <div class="contactBox">
   <form method="post" class="formInfo">
     {% csrf_token %}
-    <label id="firstName" aria-placeholder="First Name">{{ form.first_name }}</label>
-    <label id="lastName" aria-placeholder="Last Name">{{ form.last_name }}</label>
+    <label id="firstName" aria-placeholder="Name">{{ form.first_name }}</label>
     <label id="email" aria-placeholder="Email">{{ form.email }}</label>
     <label id="message" aria-placeholder="message">{{ form.comment }}</label>
     <input type="submit" value="Send message">
