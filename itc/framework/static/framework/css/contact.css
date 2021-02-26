@@ -1,5 +1,5 @@
 body{
-  background:linear-gradient(to right, #164A41, #9dc88d);
+  background: white;
   overflow: hidden;
 }
 /* HEADER */
@@ -11,9 +11,8 @@ ul {
   left: 0;
   list-style-type: none;
   overflow: hidden;
-  color: #ffffff;
+  color: black;
   min-width: 100%;
-  box-shadow: 5px 10px;
 }
 
 ul p{
@@ -23,7 +22,7 @@ ul p{
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
-  border-bottom: 2px solid #fffffc;
+  border-bottom: 2px solid #000;
   font-family: 'Lato';
   
 }
@@ -35,7 +34,7 @@ li {
 /* DROPDOWN */
 li a, .dropbtn {
   display: inline-block;
-  color:#ffffff;
+  color:black;
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
@@ -44,8 +43,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  color: #f1c47c;
-  border: 1px solid #f1c47c;
+  border: 1px solid #9dc88d;
 }
 
 .dropdown {
@@ -61,7 +59,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown-content a {
-  color: #ffffff;
+  color: #000;
   padding: 20px 30px;
   text-decoration: none;
   display: block;
@@ -86,30 +84,33 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .contactBox{
   border: 2px solid black;
-  width: 100%;
-  height: 50vh;
-  float: left;
-  margin-top: 0vh;
+  width: 40%;
+  height: 80vh;
+  margin-left: 30vw;
 }
 
-.formInfo label{
-  padding: 16px;
-  display: block;
+label{
   border: 2px solid black;
-  margin-left: 20vw;
+  display: block;
 }
+
+.block{
+  display: inline-block;
+}
+
+#message{
+  width: 30vw;
+}
+
 
 /* Submit Button */
 .btn {
-  border: none;
+  border: 2px solid gray;
   font-family: 'Lato';
   font-size: inherit;
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 25px 80px;
-  display: inline-block;
-  margin: 15px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -118,6 +119,7 @@ li a:hover, .dropdown:hover .dropbtn {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  margin-left: 5vw;
 }
 
 .btn:after {
