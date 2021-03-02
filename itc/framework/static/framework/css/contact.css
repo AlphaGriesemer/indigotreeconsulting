@@ -1,9 +1,12 @@
 body{
-  background: white;
+  background: #e2e7e7;
   overflow: hidden;
 }
 /* HEADER */
 ul {
+  top: 0;
+  right: 0;
+  background: white;
   position: relative;
   margin: 0;
   padding: 0px;
@@ -13,6 +16,7 @@ ul {
   overflow: hidden;
   color: black;
   min-width: 100%;
+  border: none;
 }
 
 ul p{
@@ -72,40 +76,55 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /*banner*/
 .banner{
-  border: 2px solid black;
   float: left;
   width: 100%;
-  height: 40vh;
-  z-index: -1;
+  height: 33vh;
 }
 
 
 /* Contact */
-
 .contactBox{
-  border: 2px solid black;
-  width: 40%;
-  height: 80vh;
-  margin-left: 30vw;
+  margin-top: 35vh;
+  width: 100%;
+  height:60vh;
 }
 
-label{
-  border: 2px solid black;
-  display: block;
+.formInfo {
+  height: 100%;
 }
 
-.block{
-  display: inline-block;
+#firstName{
+  position: relative;
+  height: 6vh;
+  width: 40vw;
+  border: 15px solid rgb(236, 150, 50);
+  padding: 16px;
+  margin-left: 10vw;
+}
+
+#email{
+  border: 15px solid #9dc88d;
+  height: 6vh;
+  width: 40vw;
+  padding: 16px;
+  margin-left: 10vw;
 }
 
 #message{
-  width: 30vw;
+  border: 15px solid #9dc88d;
+  height: 6vh;
+  width: 40vw;
+  padding: 16px;
+  margin-left: 10vw;
 }
+
+
 
 
 /* Submit Button */
 .btn {
-  border: 2px solid gray;
+  border: none;
+  box-shadow: none;
   font-family: 'Lato';
   font-size: inherit;
   color: inherit;
@@ -113,13 +132,16 @@ label{
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 700;   
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  margin-left: 5vw;
+  float: right;
+  margin-right: 20%;
+  margin-top: 5vh;
+  width: 16vw;
 }
 
 .btn:after {

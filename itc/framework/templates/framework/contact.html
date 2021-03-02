@@ -29,24 +29,24 @@
 
 <!--Comment-->
 <!--IMAGE HEADER-->
-<img  class="banner" src="{% static 'framework/images/fox_2.jpg' %}" >
+<div>
+  <img  class="banner" src="{% static 'framework/images/bald_eagle.JPG' %}" >
+</div>
 <!--Contact-->
 <div class="contactBox">
   <form method="post" class="formInfo">
     {% csrf_token %}
-    <div class="block">
-      <p>Name *</p>
-      <label id="firstName" aria-placeholder="Name">{{ form.first_name }}</label>
-      <p>Email *</p>
-      <label id="email" aria-placeholder="Email">{{ form.email }}</label>
-      <p>Message *</p>
-      <label  id="message" aria-placeholder="message">{{ form.comment }}</label>
-    </div>
-    <div class="block">
-      <button class="btn btn-4 btn-sep icon-send">Button</button></label>
+    <div class="formInfo">
+      <p></p>
+      {{ form.first_name }}
+      <p></p>
+      {{ form.email }}
+      <p></p>
+      {{ form.comment }}
+      
+      <button class="btn btn-4 btn-sep icon-send">SEND</button>
     </div>
   </form>
-  
 </div>
 <div>
   
