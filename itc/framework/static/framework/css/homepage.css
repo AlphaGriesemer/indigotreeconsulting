@@ -80,7 +80,7 @@ li a:hover, .dropdown:hover .dropbtn {
 .text_area{
   float: right;
   margin-right: 50vw;
-  background: linear-gradient(to right, #9dc88d, #4d774e);
+  background: #34495e;
   border-radius: 400px;
   width: 70vw;
   height: 100vh;
@@ -90,7 +90,7 @@ li a:hover, .dropdown:hover .dropbtn {
   float: right;
   position: absolute;
   margin-left: 40vw;
-  background: linear-gradient(to right, #9dc88d, #4d774e);
+  background: #4d774e;
   border-radius: 40px;
   width: 70vw;
   height: 100vh;
