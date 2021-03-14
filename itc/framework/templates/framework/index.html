@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -26,7 +27,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{% static 'framework/css/style.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'framework/css/style.css' %}">
 
   <!-- =======================================================
   * Template Name: Bethany - v4.0.1
@@ -789,7 +790,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{% static 'framework/js/main.css' %}"></script>
 
 </body>
 
