@@ -7,7 +7,7 @@ from framework.forms import ContactForm
 
 
 class IndexView(TemplateView):
-    template_name = "framework/homepage.html"
+    template_name = "framework/index.html"
 
 
 class ServiceView(TemplateView):
