@@ -15,7 +15,7 @@ class ServiceView(TemplateView):
 
 
 class ContactView(FormView):
-    template_name = "framework/contact.html"
+    template_name = "framework/index.html"
     form_class = ContactForm
     success_url = "/thanks/"
 
