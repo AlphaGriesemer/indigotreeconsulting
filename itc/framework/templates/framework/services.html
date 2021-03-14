@@ -2,9 +2,10 @@
 {% load static %}
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="{% static 'framework/css/homepage.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'framework/css/services.css' %}">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -15,7 +16,7 @@
 <ul>
   <p>Indigo Tree Consulting</p>
   <li class="dropdown">
-    <a href="{% url 'services' %}">Services \/</a>
+    <a href="{% url 'services' %}" class="services">Services <i class="fa fa-bars"></i></a>    
     <div class="dropdown-content">
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
@@ -25,3 +26,18 @@
   <li><a href="{% url 'contact' %}">Contact</a></li>
   <li><a href="{% url 'index' %}">Home</a></li>
 </ul>
+<div class="img">
+  <img class ="img1_0" src="{% static 'framework/images/green_heron.JPG' %}" style="width: 100%; height: 20vh;">
+  <div class="text fade" style="display: none;">
+    <p>Test 1</p>
+  </div>
+  <a class="prev" onclick="dropdownText(1)">&#8659;</a>    
+</div>
+<div class="img" style="margin-top: 2vh;">
+  <img class ="img2_0" src="{% static 'framework/images/green_heron.JPG' %}" style="width: 100%; height: 20vh;">
+  <div class="text fade" style="display: none;">
+    <p>Test 2</p>
+  </div>
+  <a class="prev" onclick="dropdownText(2)">&#8659;</a>    
+</div>
+
